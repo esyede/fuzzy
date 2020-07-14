@@ -40,7 +40,7 @@ class Fuzzy
      */
     public function search($keyword = null, $attributes)
     {
-        $keyword = $keyword ? strtolower($keyword) : strtolower($this->keyword);
+        $keyword = $keyword ? strtolower($keyword) : null;
         $this->attributes = is_array($attributes) ? $attributes : [$attributes];
 
         $results = [];
