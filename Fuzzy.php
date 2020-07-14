@@ -10,7 +10,7 @@ class Fuzzy
     const FIRST_STARTS_WITH_SECOND = 3;
     const FIRST_CONTAINS_SECOND = 4;
     const LEVENSHTEIN_DISTANCE_CHECK = 5;
-    const LONGEST_COMMON_SUBSEQUENCE_CHECK = 6;
+    const LONGEST_COMMON_SUBSTRING_CHECK = 6;
 
     public $maximum = 0.3;
     public $minimum = 0.7;
@@ -31,7 +31,7 @@ class Fuzzy
 
     /**
      * Search using Levenshtein Distance (LD) Algorithm and
-     * Longest Common Subsequence (LCS) Algorithm.
+     * Longest Common Substring (LCS) Algorithm.
      *
      * @param string|null  $keyword
      * @param string|array $keyword
@@ -85,7 +85,7 @@ class Fuzzy
                     $similarity = strlen($lcs) / strlen($keyword);
 
                     if ($similarity > $this->minimum) {
-                        $type = self::LONGEST_COMMON_SUBSEQUENCE_CHECK;
+                        $type = self::LONGEST_COMMON_SUBSTRING_CHECK;
                         $value = strlen($lcs) / strlen($value) * (-1);
                     }
                 }
@@ -116,7 +116,7 @@ class Fuzzy
     }
 
     /**
-     * Get Longest Common Subsequence.
+     * Get Longest Common Substring.
      *
      * @param string $first
      * @param string $second
