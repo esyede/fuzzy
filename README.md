@@ -33,7 +33,7 @@ $attributes = 'name';
 $results = $fuzzy->search($keyword, $attributes);
 print_r($results);
 
-$keyword = 'Atas';
+$keyword = 'Na';
 $attributes = ['name', 'address'];
 
 $results = $fuzzy->search($keyword, $attributes);
