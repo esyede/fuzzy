@@ -1,5 +1,5 @@
 # fuzzy
-Fuzzy search using [Levenstein Distance (LD)](https://en.wikipedia.org/wiki/Levenshtein_distance) and [Longest Common Substring (LCS)](https://en.wikipedia.org/wiki/Longest_common_substring_problem) algorithm (single file, no dependencies)
+Fuzzy search using [Levenshtein Distance (LD)](https://en.wikipedia.org/wiki/Levenshtein_distance) and [Longest Common Substring (LCS)](https://en.wikipedia.org/wiki/Longest_common_substring_problem) algorithm (single file, no dependencies)
 
 
 
